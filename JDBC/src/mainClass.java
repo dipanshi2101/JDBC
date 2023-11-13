@@ -4,7 +4,7 @@ public class mainClass {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Login log = new Login();
-        System.out.println("WELCOME, Please Enter Your Credentials ");
+        System.out.println("\nWELCOME, Please Enter Your Credentials ");
         log.enterDetails();
 
         System.out.print("Choose from the Menu, what you want to perform- \n");
