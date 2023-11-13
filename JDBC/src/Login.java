@@ -7,10 +7,10 @@ public class Login {
 
     public void enterDetails() {
 
-        System.out.println("Enter username: ");
+        System.out.print("Enter username: ");
         username = sc.nextLine();
 
-        System.out.println("Enter password: ");
+        System.out.print("Enter password: ");
         String password = sc.nextLine();
 
         db db = new db();
@@ -45,7 +45,7 @@ public class Login {
 
     public void delParticularThought() {
         db db = new db();
-        System.out.println("Search for your thought through keyword to delete: ");
+        System.out.print("Search for your thought through keyword to delete: ");
 
         String particularThought = sc.nextLine();
         System.out.println("The below record/s are found for deletion ");
