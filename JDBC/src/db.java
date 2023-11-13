@@ -68,9 +68,9 @@ public class db {
                     selectPstmt.setString(2, pass);
                     try (ResultSet resultSet = selectPstmt.executeQuery()) {
                         if (resultSet.next()) {
-                            System.out.println("Welcome Existing user " + username + "! Login successful...");
+                            System.out.println("\nWelcome Existing user " + username + "! Login successful...");
                         } else {
-                            System.out.println("Please Enter correct password to Login!");
+                            System.out.println("\nPlease Enter correct password to Login!");
                             System.exit(0);
                         }
                     }
@@ -87,7 +87,7 @@ public class db {
             pstmt.setString(1, username);
             pstmt.setString(2, thoughts);
             pstmt.executeUpdate();
-            System.out.println("Thought added successfully...");
+            System.out.println("Thought added successfully.");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -153,9 +153,9 @@ public class db {
                 int rowsAffected = deletePstmt.executeUpdate();
 
                 if (rowsAffected > 0) {
-                    System.out.println("Thought deleted successfully...");
+                    System.out.println("Thought deleted successfully!\n");
                 } else {
-                    System.out.println("No matching thoughts found for deletion.");
+                    System.out.println("No matching thoughts found for deletion.\n");
                 }
             }
         } catch (SQLException e) {

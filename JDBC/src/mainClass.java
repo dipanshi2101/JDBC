@@ -7,14 +7,15 @@ public class mainClass {
         System.out.println("\nWELCOME, Please Enter Your Credentials ");
         log.enterDetails();
 
-        System.out.print("Choose from the Menu, what you want to perform- \n");
+        System.out.print("Choose from the Menu, what you want to perform- \n\n");
 
         int flag = 1;
 
         do {
             System.out.println(
                     "Press 1 : Add Thought \nPress 2 : Show All Thoughts \nPress 3 : Search Thoughts \nPress 4 : Delete Particular Record \nPress 5 : Delete All Records");
-            System.out.println("Press 6 : Update Password");
+            System.out.println("Press 6 : Update Password\n");
+            System.out.print("Your Choice: ");
             int num = sc.nextInt();
             switch (num) {
                 case 1:
@@ -45,8 +46,10 @@ public class mainClass {
                     System.out.println("Wrong Choice");
 
             }
-            System.out.println("Want to explore more? then Press 1 otherwise Press 2 : ");
+            System.out.print("\nWant to explore more? then Press 1 otherwise Press 2 : ");
             flag = sc.nextInt();
+            System.out.println('\n');
+
         } while (flag == 1);
 
         System.out.println("\nThought Of The Day!");
